@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="banner">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="contact-button">Contact Us</a>
+  </header>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <div class="container">
+    <section class="card" id="home">
+      <h2>Home</h2>
+      <p>Welcome to our website! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <section class="card" id="about">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor elit eget ligula faucibus, ut vulputate elit dapibus.</p>
+    </section>
+
+    <section class="card" id="services">
+      <h2>Services</h2>
+      <div class="services">
+        <!-- Services cards will be dynamically generated using JavaScript -->
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to us using the contact form below.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section class="card" id="whyus">
+      <h2>Why Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor elit eget ligula faucibus, ut vulputate elit dapibus.</p>
+    </section>
+
+    <section class="card" id="feeds">
+      <h2>Twitter Feeds</h2>
+      <!-- Add your Twitter feeds here -->
+      <div class="feeds">
+        <p>Twitter feed goes here...</p>
+      </div>
+    </section>
+
+    <section class="card" id="rss">
+      <h2>Blog RSS</h2>
+      <!-- Add your Blog RSS feeds here -->
+      <div class="feeds">
+        <p>Blog RSS feed goes here...</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-table">
+      <div class="footer-row">
+        <div class="footer-cell">
+          <a href="#home"><img src="home-icon.png" alt="Home"></a>
+          <a href="#home">Home</a>
+        </div>
+        <div class="footer-cell">
+          <a href="#about"><img src="about-icon.png" alt="About"></a>
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-cell">
+          <a href="#services"><img src="services-icon.png" alt="Services"></a>
+          <a href="#services">Services</a>
+        </div>
+        <div class="footer-cell">
+          <a href="#contact"><img src="contact-icon.png" alt="Contact"></a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-cell">
+          <a href="#whyus"><img src="whyus-icon.png" alt="Why Us"></a>
+          <a href="#whyus">Why Us</a>
+        </div>
+        <div class="footer-cell">
+          <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="https://www.facebook.com">Facebook</a>
+        </div>
+        <div class="footer-cell">
+          <a href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="https://www.twitter.com">Twitter</a>
+        </div>
+        <div class="footer-cell">
+          <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="https://www.instagram.com">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-cell">
+          <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+          <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-text">
+      &copy; 2023 My Website. All rights reserved.
+    </div>
+  </footer>
+  
+  <!-- Service Details Modal -->
+  <div class="modal" id="service-details-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="service-modal-title"></h2>
+      <p id="service-modal-description"></p>
+    </div>
+  </div>
+</body>
+</html>
